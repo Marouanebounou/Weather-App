@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="day-theme"> <div class="container">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
+            <span class="icon">🌙</span> Dark Mode
+        </button>
+
+        <div class="weather-card">
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Enter city name..." autocomplete="off">
+                <button id="search-btn">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </button>
+            </div>
+
+            <div class="error-message" style="display: none;">
+                <p>City not found. Please try again.</p>
+            </div>
+
+            <div class="weather-info">
+                <img src="https://openweathermap.org/img/wn/02d@4x.png" alt="weather icon" class="weather-icon">
+                
+                <h1 class="temp">22°C</h1>
+                <h2 class="city">Casablanca</h2>
+                <p class="description">Few Clouds</p>
+
+                <div class="details">
+                    <div class="col">
+                        <span class="label">Humidity</span>
+                        <span class="value humidity">45%</span>
+                    </div>
+                    <div class="col">
+                        <span class="label">Wind Speed</span>
+                        <span class="value wind">12 km/h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
